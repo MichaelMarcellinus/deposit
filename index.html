@@ -20,8 +20,9 @@
         display: flex;
         flex-direction: column;
         background-image: url(img/1.png);
-        background-repeat: no-repeat;
-        background-position: bottom left;
+        background-repeat: repeat-y;
+        background-color: #e8f6fc;
+        background-size: 100%;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         text-decoration: none;
@@ -71,16 +72,31 @@
      <div class="faqs text-center mt-auto">Frequently Asked Questions</div>
 
    <!-- accordian -->
-   <div class="accordion accordian-flush ms-5 me-5 mt-3 mb-3" id="accordionExample">
+   <div class="accordion accordian-flush ms-5 me-5 mt-4 mb-3" id="accordionExample">
     <div class="accordion-item rounded-4">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed judulaccordian" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Apa tupoksi deposit?
+        <button class="accordion-button collapsed judulaccordian rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Apa dasar pelaksanaan serah simpan karya cetak dan karya rekam di Perpustakaan Provinsi?
         </button>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body text-justify isiaccordian">
+          <ul>
+            <li>Undang-Undang Nomor 13 Tahun 2018 tentang Serah Simpan Karya Cetak dan Karya Rekam.</li>
+            <li>Peraturan Pemerintah No 55 Tahun 2021 tentang Pelaksanaan Peraturan Perundang-Undangan No. 13 Tahun 2018 tentang Serah Simpan Karya Cetak dan Karya Rekam.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Apa tupoksi deposit?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body isiaccordian text-justify">
-          Deposit memiliki tugas menghimpun dan mengelola hasil karya cetak dan karya rekam untuk disimpan dan didayagunakan. 
+          Mengumpulkan, menghimpun, mendayagunakan dan melestarikan terbitan daerah suatu daerah tentang daerah. 
           <div class="contoh text-center isiaccordian mb-2 mt-3">
             <b>CONTOH</b>
           </div>
@@ -101,15 +117,15 @@
     </div>
     <div class="accordion-item rounded-4">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           Apa tujuan serah simpan KCKR?
         </button>
       </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body text-justify isiaccordian">
           Tujuan dari serah simpan Karya Cetak dan Karya Rekam yaitu:
           <ul>
-            <li>Mewujudkan kokeksi nasional dan melestarikannya sebagai hasil budaya bangsa.</li>
+            <li>Mewujudkan koleksi nasional dan melestarikannya sebagai hasil budaya bangsa.</li>
             <li>Menyelamatkan Karya Cetak dan Karya Rekam dari ancaman bahaya yang disebabkan oleh alam dan/atau perbuatan manusia.</li>
           </ul>
         </div>
@@ -117,11 +133,11 @@
     </div>
     <div class="accordion-item rounded-4">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed mt-3 judulaccordian" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <button class="accordion-button collapsed mt-3 judulaccordian rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           Bagaimana cara penyerahan KCKR?
         </button>
       </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body pt-3 ps-1 pe-1 pb-0 isiaccordian">
           <div class="container text-center">
             <div class="row align-items-center mb-3">
@@ -129,9 +145,11 @@
                 <img src="img/book.png" alt="Logo" width="100" class="img-fluid">
                 <BR><b>KARYA CETAK</b>
                   <ul class="text-justify">
-                    <li>Penerbit Mengirim 2 Eks</li>
-                    <li>WNI/A Mengirim 1 Eks</li>
-                    <li>Pemerintah Mengirim 2 Eks</li>
+                    <li>Penerbit Mengirim 1 Eks</li>
+                    <li>Pemerintah Daerah Mengirim 1 Eks</li>
+                    <li>Dewan Perwakilan Rakyat Daerah Mengirim 1 Eks</li>
+                    <li>Penulis Mengirim 1 Eks</li>
+                    <li>Masyarakat Mengirim 1 Eks</li>
                   </ul>
               </div>
             </div>
@@ -140,7 +158,11 @@
                 <img src="img/clapboard.png" alt="Logo" width="100" class="img-fluid ">
                 <BR><b>KARYA REKAM</b>
                   <ul class="text-justify">
-                    <li>Mengirim 1 Salinan Rekaman</li>
+                    <li>Penerbit Mengirim 1 salinan Rekaman</li>
+                    <li>Pemerintah Daerah Mengirim 1 salinan Rekaman</li>
+                    <li>Dewan Perwakilan Rakyat Daerah Mengirim 1 salinan Rekaman</li>
+                    <li>Penulis Mengirim 1 salinan Rekaman</li>
+                    <li>Masyarakat Mengirim 1 salinan Rekaman</li>
                   </ul>
               </div>
             </div>
@@ -150,11 +172,232 @@
     </div>
     <div class="accordion-item rounded-4">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed mt-3 judulaccordian rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Apa yang dimaksud Penerbit dan Produsen Karya Rekam?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+          Orang perorangan, badan usaha, atau badan hukum yang menerbitkan Karya Cetak yang berada di wilayah Sumatera Selatan.
+          <div class="container text-center isiaccordian">
+            <img src="img/peta.jpg" alt="Logo" width="250" class="img-fluid mt-2">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Apa yang dimaksud Karya Cetak?
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+          Setiap karya intelektual dan/atau artistik yang diterbitkan dalam bentuk cetak yang diperuntukkan bagi umum.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Apa yang dimaksud Karya Rekam?
+        </button>
+      </h2>
+      <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+          Setiap karya intelektual dan/atau artistik yang direkam, baik audio maupun visual dalam bentuk analog, digital, elektromagnetik, optikal, atau sejenisnya yang diperuntukkan bagi umum.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          Apa yang dimaksud Karya Rekam Analog?
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+          Karya yang menggunakan media berbentuk fisik yang dapat diraba, dilihat, didengar, dan disampaikan dengan perangkat tertentu selain dengan perangkat komputer atau dengan perangkat pembaca analog.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          Apa yang dimaksud Karya Rekam Digital?
+        </button>
+      </h2>
+      <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+          Karya yang dapat dilihat, didengar, dan ditampilkan melalui komputer atau alat baca digital lainnya.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          Apa yang dimaksud Koleksi Deposit?
+        </button>
+      </h2>
+      <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+          Kumpulan bahan pustaka, baik tercetak maupun terekam, yang dihasilkan oleh penerbit dan pengusaha rekaman yang berdomisili di daerah, yang disimpan dan dikelola oleh Dinas Perpustakaan Provinsi Sumatera Selatan.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+          Apa yang dimaksud Koleksi Serah Simpan?
+        </button>
+      </h2>
+      <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+          Seluruh hasil Karya Cetak dan Karya Rekam yang telah berada dalam pengelolaan Perpustakaan Provinsi yang memiliki tugas dan fungsi sebagai Perpustakaan Deposit.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed mt-3 judulaccordian rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+          Kapan paling lambat Serah Simpan Karya Cetak & Karya Rekam diserahkan?
+        </button>
+      </h2>
+      <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body pt-3 ps-1 pe-1 pb-0 isiaccordian">
+          <div class="container text-center">
+            <div class="row align-items-center mb-3">
+              <div class="col">
+                <img src="img/book.png" alt="Logo" width="100" class="img-fluid">
+                <BR><b>KARYA CETAK</b>
+                  <ul class="text-justify">
+                    <li>Tiga bulan setelah diterbitkan</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col">
+                <img src="img/clapboard.png" alt="Logo" width="100" class="img-fluid ">
+                <BR><b>KARYA REKAM</b>
+                  <ul class="text-justify">
+                    <li>Satu tahun setelah dipublikasikan</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+          Bagaimana tata cara penyerahan Serah Simpan Karya Cetak dan Karya Rekam?
+        </button>
+      </h2>
+      <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+          Melalui penyerahan langsung atau melalui pengiriman.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed mt-3 judulaccordian rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+          Jenis Karya apa saja yang termasuk Serah Simpan Karya Cetak dan Karya Rekam?
+        </button>
+      </h2>
+      <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body pt-3 ps-1 pe-1 pb-0 isiaccordian">
+          <div class="container text-center">
+            <div class="row align-items-center mb-3">
+              <div class="col">
+                <img src="img/book.png" alt="Logo" width="100" class="img-fluid">
+                <BR><b>KARYA CETAK</b>
+                  <ul class="text-justify">
+                    <li><strong>Buku : </strong>Fiksi, non fiksi, karya ilmiah, laporan penelitian kecuali karya akhir mahasiswa.</li>
+                    <li><strong>Terbitan Berkala : </strong>Majalah, jurnal bulletin, tabloid, surat kabar, laporan statistik dengan periode tertentu.</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col">
+                <img src="img/clapboard.png" alt="Logo" width="100" class="img-fluid ">
+                <BR><b>KARYA REKAM</b>
+                  <ul class="text-justify">
+                    <li><strong>Rekaman Suara Analog : </strong> Piringan hitam, kaset audio, open reel, digital audio, tape, compact disc.</li>
+                    <li><strong>Rekaman Video</strong></li>
+                    <li><strong>Rekaman Video Analog : </strong>Kaset video, laser disc, digital video disc (DVD), video compact disc (VCD).</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+          Apa yang dimaksud dengan pengelolaan koleksi deposit?
+        </button>
+      </h2>
+      <div id="collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+          Kegiatan penerimaan, pengolahan, penyimpanan, pendayagunaan, pelestarian, pengawasan atas pelaksanan Simpan Karya Cetak dan Karya Rekam.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+          Bagaimana dengan bukti serah terima?
+        </button>
+      </h2>
+      <div id="collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+        Bukti serah terima dapat dikirim melalui : 
+          <div class="container text-center isiaccordian mt-3">
+            <div class="row align-items-center mb-1 isiaccordian">
+              <div class="col">
+                <img src="img/email.jpg" alt="Logo" width="100" class="img-fluid">
+                <BR>SURAT ELEKTRONIK
+              </div>
+              <div class="col">
+                <img src="img/surat.jpg" alt="Logo" width="100" class="img-fluid">
+                <br> SECARA TERCETAK
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed judulaccordian mt-3 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+          Jenis-Jenis Serah Simpan Karya Cetak Karya Rekam dikirim ke alamat mana?
+        </button>
+      </h2>
+      <div id="collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body isiaccordian text-justify">
+        Silahkan kirim ke Bidang Deposit Dinas Perpustakaan Provinsi Sumatera Selatan.
+        </div>
+        <div class="accordion-body text-justify isiaccordian">
+          <div class="d-grid gap-2">
+            <a href="https://maps.app.goo.gl/EBGscVuv6NPUd9D36" class="btn btn-light tombol">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+              </svg><br>Jalan Demang Lebar Daun No.47 Palembang 30137
+            </a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="accordion-item rounded-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed mt-3 judulaccordian rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast" aria-expanded="false" aria-controls="collapseLast">
           Butuh Informasi Lebih Detail?
         </button>
       </h2>
-      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div id="collapseLast" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body text-justify isiaccordian">
           <div class="d-grid gap-2">
             <a href="https://maps.app.goo.gl/EBGscVuv6NPUd9D36" class="btn btn-light tombol">
